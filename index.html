@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <form action="{{url_for('analyze')}}" method="post" class="form", enctype="multipart/form-data">
+            <textarea name="text" class="text-area"></textarea><br><br>
+            <input type="submit" value="Analyze" class="submit-btn">
+        </form>
+        <br><br>
+        <h2><b>OR</b></h2>
+        <br><br>
+        <h2>Text Extractor</h2>
+
+        <form action="{{ url_for('index') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="image">Upload Image:</label>
+                <input type="file" name="image" id="image" required><br>
+
+
+            </div><br>
+            <input type="submit" value="Extract Text">
+
+            <p><b>Note:</b> Upload Image Files Only!!</p>
+
+        </form>
+        <footer>
+            <div class="text">
+                
+              <h4>Created By <a href="https://www.linkedin.com/in/madhurpatilofficial/">| Madhur Dhondu Patil </a> | &#169; 2023</h4>
+            </div>
+          </footer>
+
+    </div>
+</body>
+</html>

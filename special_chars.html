@@ -1,0 +1,23 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Special Characters</title>
+  </head>
+  <body>
+    <p>Total special characters: {{count}}</p>
+    <a href="{{backurl}}">Go Back</a>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Special characters count</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <p><b>Special characters count: {{ count }}</b></p>
+    </div>
+</body>
+</html>

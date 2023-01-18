@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Analyzer</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1 class="gradient-text">Text Analyzer</h1>
+      </header>
+      <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    <div class="container">
+        <p class="text">{{ text }}</p>
+        <form>
+            <button type="submit" formaction="{{url_for('words')}}" class="count-btn">View word count</button>
+            <button type="submit" formaction="{{url_for('chars')}}" class="count-btn">View character count</button>
+            <button type="submit" formaction="{{url_for('nums')}}" class="count-btn">View number count</button>
+            <button type="submit" formaction="{{url_for('special_chars')}}" class="count-btn">Special Characters Count</button><br>
+            <button type="submit" formaction="{{url_for('index')}}" class="home-btn">Home</button>
+        </form>
+    </div>
+</body>
+</html>  
